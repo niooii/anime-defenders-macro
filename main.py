@@ -102,7 +102,7 @@ stage = 0
 #     if not bot.try_click_img('windmill_village_button.jpg', 0.8):
 #         print("failed to find img")
 #     time.sleep(1)
-
+gamestate = GameState.PLACING_UNITS
 while running:
     match gamestate:
         case GameState.IN_LOBBY:
