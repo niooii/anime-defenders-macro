@@ -80,6 +80,9 @@ def callback(hwnd, extra):
         print("\tLocation: (%d, %d)" % (x, y))
         print("\t    Size: (%d, %d)" % (w, h))
 
+if len(rblx_windows) == 0:
+	print("no roblox windows found")
+	exit(0)
 
 win32gui.EnumWindows(callback, None)
 
